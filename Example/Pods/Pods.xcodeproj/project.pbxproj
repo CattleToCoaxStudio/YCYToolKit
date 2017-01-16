@@ -390,6 +390,15 @@
 		38FED6781E2CC32F00D6A8EB /* NSUserDefaults+YCYiCloudSync.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED6731E2CC32F00D6A8EB /* NSUserDefaults+YCYiCloudSync.m */; };
 		38FED6791E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED6741E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.h */; };
 		38FED67A1E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED6751E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.m */; };
+		38FED67E1E2CC70200D6A8EB /* YCYNSNotificationCenter.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED67B1E2CC70200D6A8EB /* YCYNSNotificationCenter.h */; };
+		38FED67F1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED67C1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.h */; };
+		38FED6801E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED67D1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.m */; };
+		38FED6841E2CC71700D6A8EB /* YCYNSFileManager.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED6811E2CC71700D6A8EB /* YCYNSFileManager.h */; };
+		38FED6851E2CC71700D6A8EB /* NSFileManager+YCYPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED6821E2CC71700D6A8EB /* NSFileManager+YCYPath.h */; };
+		38FED6861E2CC71700D6A8EB /* NSFileManager+YCYPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED6831E2CC71700D6A8EB /* NSFileManager+YCYPath.m */; };
+		38FED68A1E2CC72500D6A8EB /* YCYNSIndexPath.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED6871E2CC72500D6A8EB /* YCYNSIndexPath.h */; };
+		38FED68B1E2CC72500D6A8EB /* NSIndexPath+YCYOffset.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED6881E2CC72500D6A8EB /* NSIndexPath+YCYOffset.h */; };
+		38FED68C1E2CC72500D6A8EB /* NSIndexPath+YCYOffset.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED6891E2CC72500D6A8EB /* NSIndexPath+YCYOffset.m */; };
 		7183F952FF021460B66D790D16E5C4C8 /* YCYToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD515D1F0713F2A08FD07F3FDC39E70D /* YCYToolKit-dummy.m */; };
 		9D1FBF55BBF986799A95826EAD026A32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		AD893FA3D407754A4F2A12E6A66692AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -795,6 +804,15 @@
 		38FED6731E2CC32F00D6A8EB /* NSUserDefaults+YCYiCloudSync.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+YCYiCloudSync.m"; sourceTree = "<group>"; };
 		38FED6741E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSUserDefaults+YCYSafeAccess.h"; sourceTree = "<group>"; };
 		38FED6751E2CC32F00D6A8EB /* NSUserDefaults+YCYSafeAccess.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSUserDefaults+YCYSafeAccess.m"; sourceTree = "<group>"; };
+		38FED67B1E2CC70200D6A8EB /* YCYNSNotificationCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYNSNotificationCenter.h; sourceTree = "<group>"; };
+		38FED67C1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSNotificationCenter+YCYMainThread.h"; sourceTree = "<group>"; };
+		38FED67D1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSNotificationCenter+YCYMainThread.m"; sourceTree = "<group>"; };
+		38FED6811E2CC71700D6A8EB /* YCYNSFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYNSFileManager.h; sourceTree = "<group>"; };
+		38FED6821E2CC71700D6A8EB /* NSFileManager+YCYPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSFileManager+YCYPath.h"; sourceTree = "<group>"; };
+		38FED6831E2CC71700D6A8EB /* NSFileManager+YCYPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSFileManager+YCYPath.m"; sourceTree = "<group>"; };
+		38FED6871E2CC72500D6A8EB /* YCYNSIndexPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYNSIndexPath.h; sourceTree = "<group>"; };
+		38FED6881E2CC72500D6A8EB /* NSIndexPath+YCYOffset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSIndexPath+YCYOffset.h"; sourceTree = "<group>"; };
+		38FED6891E2CC72500D6A8EB /* NSIndexPath+YCYOffset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSIndexPath+YCYOffset.m"; sourceTree = "<group>"; };
 		40EEF5D3FE16BD6E06828FF679213C79 /* Pods-YCYToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YCYToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		46E81DCF0D4302052850F6506F5D4111 /* Pods_YCYToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCYToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586FEDA979216943A81301DA8CFDE3D2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
@@ -866,8 +884,8 @@
 		38FED0141E2C6D2800D6A8EB /* YCYCategories */ = {
 			isa = PBXGroup;
 			children = (
-				38FED5531E2CC11B00D6A8EB /* Foundation */,
 				38FED0151E2C6DEC00D6A8EB /* YCYCategory.h */,
+				38FED5531E2CC11B00D6A8EB /* Foundation */,
 				38FED3531E2C9D1A00D6A8EB /* UIKit */,
 			);
 			path = YCYCategories;
@@ -1333,7 +1351,7 @@
 				38FED55B1E2CC21D00D6A8EB /* NSDictionary */,
 				38FED55C1E2CC21D00D6A8EB /* NSFileManager */,
 				38FED55D1E2CC21D00D6A8EB /* NSIndexPath */,
-				38FED55E1E2CC21D00D6A8EB /* NSNotifacationCenter */,
+				38FED55E1E2CC21D00D6A8EB /* NSNotificationCenter */,
 				38FED55F1E2CC21D00D6A8EB /* NSObject */,
 				38FED5601E2CC21D00D6A8EB /* NSRunloop */,
 				38FED5611E2CC21D00D6A8EB /* NSString */,
@@ -1444,6 +1462,9 @@
 		38FED55C1E2CC21D00D6A8EB /* NSFileManager */ = {
 			isa = PBXGroup;
 			children = (
+				38FED6811E2CC71700D6A8EB /* YCYNSFileManager.h */,
+				38FED6821E2CC71700D6A8EB /* NSFileManager+YCYPath.h */,
+				38FED6831E2CC71700D6A8EB /* NSFileManager+YCYPath.m */,
 			);
 			path = NSFileManager;
 			sourceTree = "<group>";
@@ -1451,14 +1472,21 @@
 		38FED55D1E2CC21D00D6A8EB /* NSIndexPath */ = {
 			isa = PBXGroup;
 			children = (
+				38FED6871E2CC72500D6A8EB /* YCYNSIndexPath.h */,
+				38FED6881E2CC72500D6A8EB /* NSIndexPath+YCYOffset.h */,
+				38FED6891E2CC72500D6A8EB /* NSIndexPath+YCYOffset.m */,
 			);
 			path = NSIndexPath;
 			sourceTree = "<group>";
 		};
-		38FED55E1E2CC21D00D6A8EB /* NSNotifacationCenter */ = {
+		38FED55E1E2CC21D00D6A8EB /* NSNotificationCenter */ = {
 			isa = PBXGroup;
 			children = (
+				38FED67B1E2CC70200D6A8EB /* YCYNSNotificationCenter.h */,
+				38FED67C1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.h */,
+				38FED67D1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.m */,
 			);
+			name = NSNotificationCenter;
 			path = NSNotifacationCenter;
 			sourceTree = "<group>";
 		};
@@ -1720,6 +1748,7 @@
 				38FED3DA1E2CA9F700D6A8EB /* YCYUIColor.h in Headers */,
 				38FED4431E2CB3C100D6A8EB /* UIImage+YCYCapture.h in Headers */,
 				38FED4D01E2CB46F00D6A8EB /* UITextView+YCYPlaceHolder.h in Headers */,
+				38FED6841E2CC71700D6A8EB /* YCYNSFileManager.h in Headers */,
 				38FED3E11E2CA9F700D6A8EB /* UIColor+YCYWeb.h in Headers */,
 				38FED56B1E2CC27600D6A8EB /* NSArray+YCYSafeAccess.h in Headers */,
 				38FED6631E2CC30700D6A8EB /* NSURL+YCYParam.h in Headers */,
@@ -1779,6 +1808,7 @@
 				38FED66F1E2CC32200D6A8EB /* NSURLSession+YCYBlock.h in Headers */,
 				38FED5C91E2CC2B600D6A8EB /* NSDictionary+YCYBlock.h in Headers */,
 				38FED4471E2CB3C100D6A8EB /* UIImage+YCYGIF.h in Headers */,
+				38FED68A1E2CC72500D6A8EB /* YCYNSIndexPath.h in Headers */,
 				38FED4871E2CB40700D6A8EB /* UINavigationController+YCYTransitions.h in Headers */,
 				38FED4611E2CB3D400D6A8EB /* UIImageView+YCYBetterFace.h in Headers */,
 				38FED5B31E2CC2AB00D6A8EB /* NSDateFormatter+YCYMake.h in Headers */,
@@ -1831,6 +1861,7 @@
 				38FED5CD1E2CC2B600D6A8EB /* NSDictionary+YCYXML.h in Headers */,
 				38FED4C51E2CB46400D6A8EB /* UITextField+YCYShake.h in Headers */,
 				38FED4CB1E2CB46400D6A8EB /* UITextField+YCYInputLimit.h in Headers */,
+				38FED68B1E2CC72500D6A8EB /* NSIndexPath+YCYOffset.h in Headers */,
 				38FED6001E2CC2DB00D6A8EB /* YCYNSRunLoop.h in Headers */,
 				38FED49B1E2CB42600D6A8EB /* UIScreen+YCYFrame.h in Headers */,
 				38FED5C31E2CC2B600D6A8EB /* NSDictionary+YCYSafeAccess.h in Headers */,
@@ -1846,6 +1877,7 @@
 				38FED48B1E2CB40700D6A8EB /* UINavigationController+YCYStackManager.h in Headers */,
 				38FED4D21E2CB46F00D6A8EB /* YCYUITextView.h in Headers */,
 				38FED4951E2CB41500D6A8EB /* UIResponder+YCYResponderChain.h in Headers */,
+				38FED6851E2CC71700D6A8EB /* NSFileManager+YCYPath.h in Headers */,
 				38FED5701E2CC28500D6A8EB /* YCYNSBundle.h in Headers */,
 				38FED3BF1E2CA9E900D6A8EB /* UIButton+YCYImagePosition.h in Headers */,
 				38FED4391E2CB3C100D6A8EB /* UIImage+YCYFXImage.h in Headers */,
@@ -1889,7 +1921,9 @@
 				38FED56A1E2CC27600D6A8EB /* YCYNSArray.h in Headers */,
 				38FED6681E2CC31600D6A8EB /* YCYNSURLConnection.h in Headers */,
 				38FED6331E2CC2ED00D6A8EB /* NSString+YCYEmoji.h in Headers */,
+				38FED67F1E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.h in Headers */,
 				38FED6431E2CC2EE00D6A8EB /* NSString+YCYContains.h in Headers */,
+				38FED67E1E2CC70200D6A8EB /* YCYNSNotificationCenter.h in Headers */,
 				38FED4331E2CB3C100D6A8EB /* UIImage+YCYAlpha.h in Headers */,
 				38FED4771E2CB3E600D6A8EB /* UILabel+YCYAutomaticWriting.h in Headers */,
 				38FED5E71E2CC2C600D6A8EB /* NSObject+YCYReflection.h in Headers */,
@@ -2002,6 +2036,7 @@
 				38FED40A1E2CB3B400D6A8EB /* UIFont+YCYCustomLoader.m in Sources */,
 				38FED5CE1E2CC2B600D6A8EB /* NSDictionary+YCYXML.m in Sources */,
 				38FED54C1E2CB4AC00D6A8EB /* UIWebView+YCYWebStorage.m in Sources */,
+				38FED6801E2CC70200D6A8EB /* NSNotificationCenter+YCYMainThread.m in Sources */,
 				38FED5061E2CB47E00D6A8EB /* UIView+YCYVisuals.m in Sources */,
 				38FED5221E2CB49200D6A8EB /* UIViewController+YCYRecursiveDescription.m in Sources */,
 				38FED43C1E2CB3C100D6A8EB /* UIImage+YCYResize.m in Sources */,
@@ -2074,6 +2109,7 @@
 				38FED4B61E2CB45100D6A8EB /* UITableViewCell+YCYNIB.m in Sources */,
 				38FED4481E2CB3C100D6A8EB /* UIImage+YCYGIF.m in Sources */,
 				38FED4881E2CB40700D6A8EB /* UINavigationController+YCYTransitions.m in Sources */,
+				38FED6861E2CC71700D6A8EB /* NSFileManager+YCYPath.m in Sources */,
 				38FED3CA1E2CA9E900D6A8EB /* UIButton+YCYBlock.m in Sources */,
 				38FED3FC1E2CB3A300D6A8EB /* UIDevice+YCYHardware.m in Sources */,
 				38FED4641E2CB3D400D6A8EB /* UIImageView+YCYLetters.m in Sources */,
@@ -2090,6 +2126,7 @@
 				38FED5F41E2CC2C600D6A8EB /* NSObject+YCYGCD.m in Sources */,
 				38FED6341E2CC2EE00D6A8EB /* NSString+YCYEmoji.m in Sources */,
 				38FED3F01E2CB39100D6A8EB /* UIControl+YCYBlock.m in Sources */,
+				38FED68C1E2CC72500D6A8EB /* NSIndexPath+YCYOffset.m in Sources */,
 				38FED5A81E2CC29E00D6A8EB /* NSDate+YCYFormatter.m in Sources */,
 				38FED5461E2CB4AC00D6A8EB /* UIWebView+YCYLoadInfo.m in Sources */,
 				38FED35C1E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.m in Sources */,

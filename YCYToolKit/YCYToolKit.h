@@ -9,5 +9,6 @@
 #ifndef YCYToolKit_h
 #define YCYToolKit_h
 
+#import "YCYCategory.h"
 
 #endif /* YCYToolKit_h */
