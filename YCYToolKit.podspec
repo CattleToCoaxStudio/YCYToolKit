@@ -28,7 +28,7 @@ TODO: Add long description of the pod here.
   s.source           = { :git => 'https://github.com/CattleToCoaxStudio/YCYToolKit.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
-  s.ios.deployment_target = '6.0'
+  s.ios.deployment_target = '7.0'
 
   s.source_files = 'YCYToolKit/YCYToolKit.h'
   
@@ -40,13 +40,16 @@ TODO: Add long description of the pod here.
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
   s.subspec 'YCYCategories' do |category|
-    category.source_files = 'YCYToolKit/YCYCategories/YCYCategory.h'
-    category.subspec 'UIKit' do |uikit|
+    category.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h','YCYToolKit/YCYCategories/YCYCategory.h'
+    category.subspec 'Test' |test|
+      test.source_files = 'YCYToolKit/YCYCategories/Test/Test.h'
+    end
+#    category.subspec 'UIKit' do |uikit|
 #      uikit.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h'
 #      uikit.subspec 'UIAlertView' do |ss|
 #	ss.source_files = 'YCYToolKit/YCYCategories/UIKit/**/YCYAlert.h'
-#        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/**/YCYUIAlertView.h','YCYToolKit/YCYCategories/UIKit/**/UIAlertView+YCYBlock.{h,m}'
+#        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIAlertView/**/*'
 #      end
-    end
+#    end
   end
 end
