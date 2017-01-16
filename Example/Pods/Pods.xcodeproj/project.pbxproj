@@ -13,6 +13,7 @@
 		38FED35A1E2C9D5B00D6A8EB /* YCYUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3571E2C9D5B00D6A8EB /* YCYUIAlertView.h */; };
 		38FED35B1E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3581E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.h */; };
 		38FED35C1E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.m in Sources */ = {isa = PBXBuildFile; fileRef = 38FED3591E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.m */; };
+		38FED35E1E2CA31500D6A8EB /* kit.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED35D1E2CA31500D6A8EB /* kit.h */; };
 		7183F952FF021460B66D790D16E5C4C8 /* YCYToolKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = DD515D1F0713F2A08FD07F3FDC39E70D /* YCYToolKit-dummy.m */; };
 		9D1FBF55BBF986799A95826EAD026A32 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		AD893FA3D407754A4F2A12E6A66692AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
@@ -41,6 +42,7 @@
 		38FED3571E2C9D5B00D6A8EB /* YCYUIAlertView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYUIAlertView.h; sourceTree = "<group>"; };
 		38FED3581E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIAlertView+YCYBlock.h"; sourceTree = "<group>"; };
 		38FED3591E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIAlertView+YCYBlock.m"; sourceTree = "<group>"; };
+		38FED35D1E2CA31500D6A8EB /* kit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = kit.h; path = ../kit.h; sourceTree = "<group>"; };
 		40EEF5D3FE16BD6E06828FF679213C79 /* Pods-YCYToolKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-YCYToolKit_Tests-resources.sh"; sourceTree = "<group>"; };
 		46E81DCF0D4302052850F6506F5D4111 /* Pods_YCYToolKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_YCYToolKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		586FEDA979216943A81301DA8CFDE3D2 /* ReplaceMe.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = ReplaceMe.m; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 		38FED3541E2C9D1A00D6A8EB /* UIAlertView */ = {
 			isa = PBXGroup;
 			children = (
+				38FED35D1E2CA31500D6A8EB /* kit.h */,
 				38FED3571E2C9D5B00D6A8EB /* YCYUIAlertView.h */,
 				38FED3581E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.h */,
 				38FED3591E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.m */,
@@ -239,6 +242,7 @@
 				38FED35A1E2C9D5B00D6A8EB /* YCYUIAlertView.h in Headers */,
 				38FED0161E2C6DEC00D6A8EB /* YCYCategory.h in Headers */,
 				38FED3561E2C9D4500D6A8EB /* YCYUIKitHeader.h in Headers */,
+				38FED35E1E2CA31500D6A8EB /* kit.h in Headers */,
 				AF83F84B8EA01E0023A81D175DBEF48C /* Pods-YCYToolKit_Tests-umbrella.h in Headers */,
 				38FED35B1E2C9D5B00D6A8EB /* UIAlertView+YCYBlock.h in Headers */,
 			);

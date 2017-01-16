@@ -41,8 +41,8 @@ TODO: Add long description of the pod here.
   # s.dependency 'AFNetworking', '~> 2.3'
   s.subspec 'YCYCategories' do |category|
     category.source_files = 'YCYToolKit/YCYCategories/YCYCategory.h'
-#    category.subspec 'UIKit' do |uikit|
-#      uikit.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h'
-#    end
+    category.subspec 'UIKit' do |uikit|
+      uikit.source_files = 'YCYToolKit/YCYCategories/UIKit/kit.h'
+    end
   end
 end
