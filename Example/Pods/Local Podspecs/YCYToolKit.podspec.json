@@ -1,0 +1,22 @@
+{
+  "name": "YCYToolKit",
+  "version": "0.1.0",
+  "summary": "A short description of YCYToolKit.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/<GITHUB_USERNAME>/YCYToolKit",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "chengyou.yang": "864390553@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/<GITHUB_USERNAME>/YCYToolKit.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "YCYToolKit/Classes/**/*"
+}

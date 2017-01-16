@@ -1,0 +1,6 @@
+framework module YCYToolKit {
+  umbrella header "YCYToolKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
