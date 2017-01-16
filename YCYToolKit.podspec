@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYToolKit'
-  s.version          = '0.0.5'
+  s.version          = '0.0.6'
   s.summary          = 'YCYToolKit is Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -60,6 +60,63 @@ TODO: Add long description of the pod here.
       end
       uikit.subspec 'UIColor' do |ss|
         ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIColor/**/*'
+      end
+      uikit.subspec 'UIControl' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIControl/**/*'
+      end
+      uikit.subspec 'UIDevice' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIDevice/**/*'
+      end
+      uikit.subspec 'UIFont' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIFont/**/*'
+      end
+      uikit.subspec 'UIImage' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIImage/**/*'
+      end
+      uikit.subspec 'UIImageView' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIImageView/**/*'
+      end
+      uikit.subspec 'UILabel' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UILabel/**/*'
+      end
+      uikit.subspec 'UINavigationBar' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UINavigationBar/**/*'
+      end
+      uikit.subspec 'UINavigationController' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UINavigationController/**/*'
+      end
+      uikit.subspec 'UIResponder' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIResponder/**/*'
+      end
+      uikit.subspec 'UIScreen' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIScreen/**/*'
+      end
+      uikit.subspec 'UIScrollView' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIScrollView/**/*'
+      end
+      uikit.subspec 'UISearchBar' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UISearchBar/**/*'
+      end
+      uikit.subspec 'UITableViewCell' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UITableViewCell/**/*'
+      end
+      uikit.subspec 'UITextField' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UITextField/**/*'
+      end
+      uikit.subspec 'UITextView' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UITextView/**/*'
+      end
+      uikit.subspec 'UIView' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIView/**/*'
+      end
+      uikit.subspec 'UIViewController' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIViewController/**/*'
+      end
+      uikit.subspec 'UIWebView' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIWebView/**/*'
+      end
+      uikit.subspec 'UIWindow' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIWindow/**/*'
       end
     end
   end
