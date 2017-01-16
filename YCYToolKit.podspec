@@ -110,10 +110,10 @@ TODO: Add long description of the pod here.
         ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIView/**/*'
       end
       uikit.subspec 'UIViewController' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIViewController/**/*'
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIDevice/UIDevice+YCYHardware.h','YCYToolKit/YCYCategories/UIKit/UIViewController/**/*'
       end
       uikit.subspec 'UIWebView' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIWebView/**/*'
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIColor/UIColor+YCYWeb.h','YCYToolKit/YCYCategories/UIKit/UIWebView/**/*'
       end
       uikit.subspec 'UIWindow' do |ss|
         ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIWindow/**/*'
