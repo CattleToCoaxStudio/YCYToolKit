@@ -155,7 +155,7 @@ TODO: Add long description of the pod here.
         ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSRunloop/**/*'  
       end
       foundation.subspec 'NSString' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSString/**/*','YCYToolKit/YCYCategories/UIKit/Foundation/NSData/NSData+{YCYBase64,YCYEncrypt}.h'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSString/**/*','YCYToolKit/YCYCategories/Foundation/NSData/NSData+{YCYBase64,YCYEncrypt}.h'  
       end
       foundation.subspec 'NSTimer' do |ss|
         ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSTimer/**/*'  

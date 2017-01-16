@@ -1346,6 +1346,7 @@
 		38FED5531E2CC11B00D6A8EB /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				38FED5541E2CC13000D6A8EB /* YCYFoundationHeader.h */,
 				38FED68D1E2CCA8300D6A8EB /* NSNotificationCenter */,
 				38FED5561E2CC21D00D6A8EB /* NSArray */,
 				38FED5571E2CC21D00D6A8EB /* NSBundle */,
@@ -1363,7 +1364,6 @@
 				38FED5641E2CC21D00D6A8EB /* NSURLConnection */,
 				38FED5651E2CC21D00D6A8EB /* NSURLSession */,
 				38FED5661E2CC21D00D6A8EB /* NSUserDefaults */,
-				38FED5541E2CC13000D6A8EB /* YCYFoundationHeader.h */,
 			);
 			path = Foundation;
 			sourceTree = "<group>";
