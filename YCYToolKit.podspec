@@ -119,59 +119,68 @@ TODO: Add long description of the pod here.
         ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIWindow/**/*'
       end
     end
-    category.subspec 'Foundation' do  |foundation|
-      foundation.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/YCYFoundationHeader.h'
+    category.subspec 'Foundation' do |foundation|
+      foundation.source_files = 'YCYToolKit/YCYCategories/Foundation/YCYFoundationHeader.h'
       foundation.subspec 'NSArray' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSArray/**/*'
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSArray/**/*'
       end
       foundation.subspec 'NSBundle' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSBundle/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSBundle/**/*'  
       end
       foundation.subspec 'NSData' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSData/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSData/**/*'  
       end
       foundation.subspec 'NSDate' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSDate/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSDate/**/*'  
       end
       foundation.subspec 'NSDateFormatter' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSDateFormatter/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSDateFormatter/**/*'  
       end
       foundation.subspec 'NSDictionary' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSDictionary/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSDictionary/**/*'  
       end
       foundation.subspec 'NSFileManager' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSFileManager/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSFileManager/**/*'  
       end
       foundation.subspec 'NSIndexPath' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSIndexPath/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSIndexPath/**/*'  
       end
       foundation.subspec 'NSNotificationCenter' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSNotificationCenter/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSNotificationCenter/**/*'  
       end
       foundation.subspec 'NSObject' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSObject/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSObject/**/*'  
       end
       foundation.subspec 'NSRunloop' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSRunloop/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSRunloop/**/*'  
       end
       foundation.subspec 'NSString' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSString/**/*','YCYToolKit/YCYCategories/UIKit/Foundation/NSData/NSData+{YCYBase64,YCYEncrypt}.h'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSString/**/*','YCYToolKit/YCYCategories/UIKit/Foundation/NSData/NSData+{YCYBase64,YCYEncrypt}.h'  
       end
       foundation.subspec 'NSTimer' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSTimer/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSTimer/**/*'  
       end
       foundation.subspec 'NSURL' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSURL/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSURL/**/*'  
       end
       foundation.subspec 'NSURLConnection' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSURLConnection/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSURLConnection/**/*'  
       end
       foundation.subspec 'NSURLSession' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSURLSession/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSURLSession/**/*'  
       end
       foundation.subspec 'NSUserDefaults' do |ss|
-        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/Foundation/NSUserDefaults/**/*'  
+        ss.source_files = 'YCYToolKit/YCYCategories/Foundation/NSUserDefaults/**/*'  
       end
     end
+  end
+  s.subspec 'YCYBaseUtils' do |baseutil|
+    baseutil.source_files = 'YCYToolKit/YCYBaseUtils/**/*'
+  end
+  s.subspec 'YCYMacro' do |macro|
+    macro.source_files = 'YCYToolKit/YCYMacro/**/*'
+  end
+  s.subspec 'YCYResources' do |resource|
+    resource.source_files = 'YCYToolKit/YCYResources/**/*'
   end
 end
