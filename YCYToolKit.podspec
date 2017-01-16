@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYToolKit'
-  s.version          = '0.0.4'
+  s.version          = '0.0.5'
   s.summary          = 'YCYToolKit is Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -45,6 +45,21 @@ TODO: Add long description of the pod here.
       uikit.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h'
       uikit.subspec 'UIAlertView' do |ss|
         ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIAlertView/**/*'
+      end
+      uikit.subspec 'UIApplication' do |ss|
+	ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIApplication/**/*'
+      end
+      uikit.subspec 'UIBarButtonItem' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIBarButtonItem/**/*'
+      end
+      uikit.subspec 'UIBezierPath' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIBezierPath/**/*'
+      end
+      uikit.subspec 'UIButton' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIButton/**/*'
+      end
+      uikit.subspec 'UIColor' do |ss|
+        ss.source_files = 'YCYToolKit/YCYCategories/UIKit/UIColor/**/*'
       end
     end
   end
