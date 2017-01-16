@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYToolKit'
-  s.version          = '0.0.2'
+  s.version          = '0.0.3'
   s.summary          = 'YCYToolKit is Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -39,10 +39,10 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   s.frameworks = 'UIKit', 'Foundation'
   # s.dependency 'AFNetworking', '~> 2.3'
-  s.subspec 'YCYCategories' do |ss|
-    ss.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h','YCYToolKit/YCYCategories/YCYCategory.h'
-    ss.subspec 'Test' |test|
-      test.source_files = 'YCYToolKit/YCYCategories/Test/Test.h'
-    end
+  s.subspec 'YCYCategories' do |category|
+    category.source_files = 'YCYToolKit/YCYCategories/YCYCategory.h'
+#    category.subspec 'UIKit' do |uikit|
+#      uikit.source_files = 'YCYToolKit/YCYCategories/UIKit/YCYUIKitHeader.h'
+#    end
   end
 end
