@@ -19,6 +19,9 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod 'YCYToolKit'
 ```
+##usage
+
+全局引入YCYToolKit.h  可以使用各文件夹下的类   也可以单独导入个文件夹下内容   具体根据目录导入
 
 ## Author
 
