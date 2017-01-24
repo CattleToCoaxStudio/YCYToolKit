@@ -80,7 +80,8 @@
     NSDateComponents *components = [[NSDateComponents alloc] init];
     [components setWeekOfMonth:1];
     
-    return [[calendar dateByAddingComponents:components toDate:[self ycy_beginningOfWeek] options:0] dateByAddingTimeInterval:-1];}
+    return [[calendar dateByAddingComponents:components toDate:[self ycy_beginningOfWeek] options:0] dateByAddingTimeInterval:-1];
+}
 
 - (NSDate *)ycy_beginningOfMonth {
     NSCalendar *calendar = [NSCalendar currentCalendar];

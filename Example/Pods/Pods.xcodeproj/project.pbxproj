@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		2117A35B83736EBFD1CF440E34F7D24D /* Pods-YCYToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49DE7C7AECA707EEC719A5CDA085E8 /* Pods-YCYToolKit_Tests-dummy.m */; };
+		38258A2A1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 38258A281E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h */; };
+		38258A2B1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38258A291E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m */; };
 		38FED0161E2C6DEC00D6A8EB /* YCYCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED0151E2C6DEC00D6A8EB /* YCYCategory.h */; };
 		38FED3561E2C9D4500D6A8EB /* YCYUIKitHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3551E2C9D4500D6A8EB /* YCYUIKitHeader.h */; };
 		38FED35A1E2C9D5B00D6A8EB /* YCYUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3571E2C9D5B00D6A8EB /* YCYUIAlertView.h */; };
@@ -421,6 +423,8 @@
 		038BAD6337CAAACBC71441A043EF3741 /* Pods-YCYToolKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-YCYToolKit_Tests.modulemap"; sourceTree = "<group>"; };
 		1F7E2AA8B5A0D6CD9BC9BA69EC85A17E /* Pods-YCYToolKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-YCYToolKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2B49DE7C7AECA707EEC719A5CDA085E8 /* Pods-YCYToolKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YCYToolKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		38258A281E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YCYRootViewController.h"; sourceTree = "<group>"; };
+		38258A291E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YCYRootViewController.m"; sourceTree = "<group>"; };
 		38FED0131E2C6CCD00D6A8EB /* YCYToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCYToolKit.h; sourceTree = "<group>"; };
 		38FED0151E2C6DEC00D6A8EB /* YCYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYCategory.h; sourceTree = "<group>"; };
 		38FED3551E2C9D4500D6A8EB /* YCYUIKitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYUIKitHeader.h; sourceTree = "<group>"; };
@@ -949,6 +953,8 @@
 				38FED37D1E2CA99800D6A8EB /* UIApplication+YCYNetworkActivityIndicator.m */,
 				38FED37E1E2CA99800D6A8EB /* UIApplication+YCYKeyboardFrame.h */,
 				38FED37F1E2CA99800D6A8EB /* UIApplication+YCYKeyboardFrame.m */,
+				38258A281E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h */,
+				38258A291E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m */,
 			);
 			path = UIApplication;
 			sourceTree = "<group>";
@@ -1778,6 +1784,7 @@
 				38FED56B1E2CC27600D6A8EB /* NSArray+YCYSafeAccess.h in Headers */,
 				38FED6631E2CC30700D6A8EB /* NSURL+YCYParam.h in Headers */,
 				38FED6471E2CC2EE00D6A8EB /* NSString+YCYNormalRegex.h in Headers */,
+				38258A2A1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h in Headers */,
 				38FED5011E2CB47E00D6A8EB /* UIView+YCYConstraints.h in Headers */,
 				38FED5471E2CB4AC00D6A8EB /* UIWebView+YCYCanvas.h in Headers */,
 				38FED5231E2CB49200D6A8EB /* UIViewController+YCYVisible.h in Headers */,
@@ -2160,6 +2167,7 @@
 				38FED5441E2CB4AC00D6A8EB /* UIWebView+YCYLoad.m in Sources */,
 				38FED3E41E2CA9F700D6A8EB /* UIColor+YCYModify.m in Sources */,
 				38FED45E1E2CB3D400D6A8EB /* UIImageView+YCYGeometryConversion.m in Sources */,
+				38258A2B1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m in Sources */,
 				38FED6441E2CC2EE00D6A8EB /* NSString+YCYContains.m in Sources */,
 				38FED3841E2CA99800D6A8EB /* UIApplication+YCYPermissions.m in Sources */,
 				38FED6501E2CC2EE00D6A8EB /* NSString+YCYHTML.m in Sources */,

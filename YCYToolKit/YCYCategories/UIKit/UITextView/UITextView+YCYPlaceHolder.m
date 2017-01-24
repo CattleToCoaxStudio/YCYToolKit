@@ -42,7 +42,7 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
             [self removeObserver:self forKeyPath:property];
         }
     }
-    [self ycy_myDealoc];
+    [UITextView ycy_load];
 }
 
 - (UITextView *)placeholderView {
@@ -106,6 +106,7 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
 {
     // 为placeholder赋值
     [self placeholderView].text = placeholder;
+    [UITextView ycy_load];
 }
 
 - (NSString *)placeholder

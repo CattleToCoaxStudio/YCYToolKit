@@ -9,5 +9,11 @@
 #import <UIKit/UIKit.h>
 
 @interface UIApplication (YCYApplicationSize)
+
+/**
+ app的存储空间
+
+ @return size
+ */
 - (NSString *)ycy_applicationSize;
 @end

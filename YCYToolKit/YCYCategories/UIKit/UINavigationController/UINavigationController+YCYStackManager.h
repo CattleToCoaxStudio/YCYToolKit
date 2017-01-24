@@ -23,7 +23,7 @@
  */
 - (BOOL)ycy_isOnlyContainRootViewController;
 /**
- *  @brief  RootViewController
+ *  @brief  RootViewController  这个拿到的始终是第一次设置成rootvc的controller
  *
  *  @return RootViewController
  */
