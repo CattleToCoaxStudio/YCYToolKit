@@ -18,18 +18,22 @@ static const void *YCYTextViewMaxHeightKey = &YCYTextViewMaxHeightKey;
 // 高度变化的block
 static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidChangedBlockKey;
 
+@interface UITextView ()
+
+@end
+
 @implementation UITextView (YCYPlaceHolder)
 
 #pragma mark - Swizzle Dealloc
 
-+ (void)ycy_load {
++ (void)load {
     // 交换dealoc
     Method dealoc = class_getInstanceMethod(self.class, NSSelectorFromString(@"dealloc"));
-    Method myDealoc = class_getInstanceMethod(self.class, @selector(ycy_myDealoc));
+    Method myDealoc = class_getInstanceMethod(self.class, @selector(myDealoc));
     method_exchangeImplementations(dealoc, myDealoc);
 }
 
-- (void)ycy_myDealoc {
+- (void)myDealoc {
     // 移除监听
     [[NSNotificationCenter defaultCenter] removeObserver:self];
     
@@ -42,7 +46,8 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
             [self removeObserver:self forKeyPath:property];
         }
     }
-    [UITextView ycy_load];
+    [self myDealoc];
+    //    [UITextView load];
 }
 
 - (UITextView *)placeholderView {
@@ -62,11 +67,11 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
         self.scrollEnabled = placeholderView.scrollEnabled = placeholderView.showsHorizontalScrollIndicator = placeholderView.showsVerticalScrollIndicator = placeholderView.userInteractionEnabled = NO;
         placeholderView.textColor = [UIColor lightGrayColor];
         placeholderView.backgroundColor = [UIColor clearColor];
-        [self ycy_refreshPlaceholderView];
+        [self refreshPlaceholderView];
         [self addSubview:placeholderView];
         
         // 监听文字改变
-        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(ycy_textViewTextChange) name:UITextViewTextDidChangeNotification object:self];
+        [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(textViewTextChange) name:UITextViewTextDidChangeNotification object:self];
         
         // 这些属性改变时，都要作出一定的改变，尽管已经监听了TextDidChange的通知，也要监听text属性，因为通知监听不到setText：
         NSArray *propertys = @[@"frame", @"bounds", @"font", @"text", @"textAlignment", @"textContainerInset"];
@@ -80,7 +85,7 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
     return placeholderView;
 }
 
-- (void)ycy_refreshPlaceholderView {
+- (void)refreshPlaceholderView {
     
     UITextView *placeholderView = objc_getAssociatedObject(self, YCYPlaceholderViewKey);
     
@@ -94,10 +99,10 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
 }
 
 #pragma mark - KVO监听属性改变
-- (void)ycy_observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
-    [self ycy_refreshPlaceholderView];
+- (void)observeValueForKeyPath:(NSString *)keyPath ofObject:(id)object change:(NSDictionary *)change context:(void *)context {
+    [self refreshPlaceholderView];
     if ([keyPath isEqualToString:@"text"]) {
-        [self ycy_textViewTextChange];
+        [self textViewTextChange];
     }
 }
 
@@ -106,7 +111,6 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
 {
     // 为placeholder赋值
     [self placeholderView].text = placeholder;
-    [UITextView ycy_load];
 }
 
 - (NSString *)placeholder
@@ -160,7 +164,7 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
     return textViewHeightDidChanged;
 }
 
-- (void)ycy_textViewTextChange {
+- (void)textViewTextChange {
     UITextView *placeholderView = objc_getAssociatedObject(self, YCYPlaceholderViewKey);
     
     // 如果有值才去调用，这步很重要
@@ -250,8 +254,8 @@ static const void *YCYTextViewHeightDidChangedBlockKey = &YCYTextViewHeightDidCh
     NSAttributedString *attrStringWithImage = [NSAttributedString attributedStringWithAttachment:textAttachment];
     [attributedString replaceCharactersInRange:NSMakeRange(index, 0) withAttributedString:attrStringWithImage];
     self.attributedText = attributedString;
-    [self ycy_textViewTextChange];
-    [self ycy_refreshPlaceholderView];
+    [self textViewTextChange];
+    [self refreshPlaceholderView];
     
 }
 
