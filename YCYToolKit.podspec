@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'YCYToolKit'
-  s.version          = '0.1.2'
+  s.version          = '0.1.4'
   s.summary          = 'YCYToolKit is Tool.'
 
 # This description is used to generate tags and improve search results.
@@ -177,9 +177,9 @@ TODO: Add long description of the pod here.
 #  s.subspec 'YCYBaseUtils' do |baseutil|
 #    baseutil.source_files = 'YCYToolKit/YCYBaseUtils/**/*'
 #  end
-#  s.subspec 'YCYMacro' do |macro|
-#    macro.source_files = 'YCYToolKit/YCYMacro/**/*'
-#  end
+  s.subspec 'YCYMacro' do |macro|
+    macro.source_files = 'YCYToolKit/YCYMacro/**/*'
+  end
 #  s.subspec 'YCYResources' do |resource|
 #    resource.source_files = 'YCYToolKit/YCYResources/**/*'
 #  end

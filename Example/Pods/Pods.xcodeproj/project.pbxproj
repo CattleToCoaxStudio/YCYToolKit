@@ -10,6 +10,7 @@
 		2117A35B83736EBFD1CF440E34F7D24D /* Pods-YCYToolKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2B49DE7C7AECA707EEC719A5CDA085E8 /* Pods-YCYToolKit_Tests-dummy.m */; };
 		38258A2A1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = 38258A281E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h */; };
 		38258A2B1E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 38258A291E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m */; };
+		38E4FE8F1F46E9CD002F080F /* YCYMacro.h in Headers */ = {isa = PBXBuildFile; fileRef = 38E4FE8E1F46E9CD002F080F /* YCYMacro.h */; };
 		38FED0161E2C6DEC00D6A8EB /* YCYCategory.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED0151E2C6DEC00D6A8EB /* YCYCategory.h */; };
 		38FED3561E2C9D4500D6A8EB /* YCYUIKitHeader.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3551E2C9D4500D6A8EB /* YCYUIKitHeader.h */; };
 		38FED35A1E2C9D5B00D6A8EB /* YCYUIAlertView.h in Headers */ = {isa = PBXBuildFile; fileRef = 38FED3571E2C9D5B00D6A8EB /* YCYUIAlertView.h */; };
@@ -425,6 +426,7 @@
 		2B49DE7C7AECA707EEC719A5CDA085E8 /* Pods-YCYToolKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-YCYToolKit_Tests-dummy.m"; sourceTree = "<group>"; };
 		38258A281E36F0A6001F4F8D /* UIApplication+YCYRootViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+YCYRootViewController.h"; sourceTree = "<group>"; };
 		38258A291E36F0A6001F4F8D /* UIApplication+YCYRootViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+YCYRootViewController.m"; sourceTree = "<group>"; };
+		38E4FE8E1F46E9CD002F080F /* YCYMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYMacro.h; sourceTree = "<group>"; };
 		38FED0131E2C6CCD00D6A8EB /* YCYToolKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = YCYToolKit.h; sourceTree = "<group>"; };
 		38FED0151E2C6DEC00D6A8EB /* YCYCategory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYCategory.h; sourceTree = "<group>"; };
 		38FED3551E2C9D4500D6A8EB /* YCYUIKitHeader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YCYUIKitHeader.h; sourceTree = "<group>"; };
@@ -1650,6 +1652,7 @@
 		38FED6951E2CCCF400D6A8EB /* YCYMacro */ = {
 			isa = PBXGroup;
 			children = (
+				38E4FE8E1F46E9CD002F080F /* YCYMacro.h */,
 			);
 			path = YCYMacro;
 			sourceTree = "<group>";
@@ -1769,6 +1772,7 @@
 				38FED4491E2CB3C100D6A8EB /* UIImage+YCYBlur.h in Headers */,
 				38FED50B1E2CB47E00D6A8EB /* UIView+YCYTable.h in Headers */,
 				38FED51B1E2CB49200D6A8EB /* UIViewController+YCYBackButtonItemTitle.h in Headers */,
+				38E4FE8F1F46E9CD002F080F /* YCYMacro.h in Headers */,
 				38FED4311E2CB3C100D6A8EB /* UIImage+YCYFileName.h in Headers */,
 				38FED6931E2CCA8300D6A8EB /* YCYNSNotificationCenter.h in Headers */,
 				38FED3A11E2CA9D400D6A8EB /* UIBezierPath+YCYSymbol.h in Headers */,
