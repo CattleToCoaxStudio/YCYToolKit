@@ -28,15 +28,15 @@
 #define YCYScreen_Height                ([UIScreen mainScreen].bounds.size.height)
 #define YCYWindow  ((UIWindow*)[[[UIApplication sharedApplication] windows] objectAtIndex:0])
 #define YCYRootViewController (UIViewController *)[[UIApplication sharedApplication] keyWindow].rootViewController;
-#define AUTOSIZE375(height) (Screen_Width/375)*height
+#define AUTOSIZE375(height) (YCYScreen_Width/375)*height
 //以414（plus）等比计算其他尺寸
-#define AUTOSIZE414(height) (Screen_Width/414.0)*height
+#define AUTOSIZE414(height) (YCYScreen_Width/414.0)*height
 //初始化控件
 #define YCYFont(fontsize) [UIFont systemFontOfSize:fontsize]
 
 #define YCYImage(imageNamestr) [UIImage imageNamed:imageNamestr]
-#define YCYImageURL(urlStr) [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",MainURL,urlStr]]
-#define YCYImageURLStr(imgStr) [NSString stringWithFormat:@"%@/%@",MainURL,imgStr]
+#define YCYImageURL(urlStr) [NSURL URLWithString:[NSString stringWithFormat:@"%@/%@",ImageMainURL,urlStr]]
+#define YCYImageURLStr(imgStr) [NSString stringWithFormat:@"%@/%@",ImageMainURL,imgStr]
 #define YCYURL(urlStr) [NSURL URLWithString:urlStr]
 
 //常用
